@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svgLineAni</title>
+    <style>
+        body {background-color: #000;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        }
+        @keyframes draw {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+        svg {overflow: visible;}
+        rect {
+            stroke-dasharray:700;
+            stroke-dashoffset:700;
+            animation: draw 2s forwards;
+        }
+
+    </style>
+</head>
+<body>
+
+    <svg width="280" height="130" viewBox="0 0 280 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="15" y="15" width="250" height="100" rx="50" stroke="#0047FF" stroke-width="30"/>
+        </svg>
+        
+        <svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="15" y="15" width="100" height="100" rx="50" stroke="white" stroke-width="30"/>
+        </svg>
+
+</body>
+</html>
